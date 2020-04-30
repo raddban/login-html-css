@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+}
+
+.bg_image{
+    background-image: url("images/photo-1534838813692-d6d37d710f9a.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+}
+
+.form{
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 70px 0 70px;
+}
+.form h2{
+    margin-bottom: 50px;
+}
+.form form [type="email"], .form form [type="password"]{
+    width: 96%;
+    height: 45px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+input[type="checkbox"] {
+    visibility: hidden;    
+}
+input[type="checkbox"] + label{
+    position: relative;
+    top: -10px;
+    left: -20px;
+}
+input[type="checkbox"] + label:before {
+    border: 1px solid #333;
+    background-color: #fff;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .25em 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 16px;
+    
+  }
+
+input[type="checkbox"]:checked + label:before {
+    background: #fff;
+    color: #333;
+    content: "\2713";
+    text-align: center;
+}
+
+input[type="checkbox"] + label span {
+    color: #f7f7f7;
+}
+input[type="checkbox"] + label span a{
+    color: #d6d6d6;
+}
+
+.form form input{
+    padding: 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.form form button{
+    background: #5ead53;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 460px;
+    padding: 10px 0 10px 0;
+    margin: 15px 0 25px 0;
+}
+.form .media{
+    position: relative;
+    left: -12px;
+    margin-bottom: 40px;
+}
+.form .media::before,
+.form .media::after{
+    content: "";
+    height: 1px;
+    width: 110px;
+    border-top: 1px solid black;
+    display: inline-block;
+    margin: 0 20px;
+    background:  #fff;
+}
+
+.form .social{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.form .social a{
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.form .social a i{
+    margin-right: 7px;
+}
+
+.form .social .fb{
+    background-color: #3b5998;
+}
+
+.form .social .tw{
+    background-color: #00acee;
+}
+
+.form .social .go{
+    background-color: #db3236;
+}
+.form .signIn{
+    color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.form .signIn a{
+    color: #d6d6d6;
+}
