@@ -31,7 +31,7 @@ body, html{
     margin-bottom: 50px;
 }
 .form form [type="email"], .form form [type="password"]{
-    width: 96%;
+    width: 94%;
     height: 45px;
     border-radius: 5px;
     margin-bottom: 20px;
